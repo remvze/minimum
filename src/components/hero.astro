@@ -1,0 +1,33 @@
+---
+import { Container } from './container';
+---
+
+<Container>
+  <section class="hero">
+    <img alt="Minimum Logo" src="/logo.svg" />
+    <h1>Minimum</h1>
+    <p>Simple directory of minimal websites.</p>
+  </section>
+</Container>
+
+<style>
+  .hero {
+    padding: 100px 0 50px;
+
+    & img {
+      display: block;
+      height: 20px;
+      margin-bottom: 16px;
+    }
+
+    & h1 {
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+
+    & p {
+      font-size: var(--font-sm);
+      color: var(--color-foreground-subtle);
+    }
+  }
+</style>
