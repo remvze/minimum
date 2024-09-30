@@ -37,4 +37,16 @@ export const websites: Array<{
     name: 'Charlie Deets',
     url: 'https://charliedeets.com/',
   },
+  {
+    address: 'denismoulin.com',
+    date: '2024-9-30',
+    name: 'Denis Moulin',
+    url: 'https://www.denismoulin.com/',
+  },
+  {
+    address: 'https://once.com/',
+    date: '2024-9-30',
+    name: 'Once',
+    url: 'https://once.com/',
+  },
 ];
