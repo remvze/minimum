@@ -1,0 +1,33 @@
+---
+import { Container } from './container';
+---
+
+<Container>
+  <footer class="footer">
+    <p>Curated by <a href="https://remvze.com/">Maze</a>.</p>
+    <p>
+      Source code on <a href="https://github.com/remvze/minimum">GitHub</a>.
+    </p>
+  </footer>
+</Container>
+
+<style>
+  .footer {
+    padding: 50px 0;
+
+    & p {
+      font-size: var(--font-xsm);
+      color: var(--color-foreground-subtler);
+
+      &:not(:last-of-type) {
+        margin-bottom: 8px;
+      }
+
+      & a {
+        font-weight: 500;
+        color: var(--color-foreground-subtle);
+        text-decoration: none;
+      }
+    }
+  }
+</style>
