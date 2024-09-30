@@ -44,7 +44,7 @@ export const websites: Array<{
     url: 'https://www.denismoulin.com/',
   },
   {
-    address: 'https://once.com/',
+    address: 'once.com',
     date: '2024-9-30',
     name: 'Once',
     url: 'https://once.com/',
