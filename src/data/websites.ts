@@ -49,4 +49,10 @@ export const websites: Array<{
     name: 'Once',
     url: 'https://once.com/',
   },
+  {
+    address: 'reaper.is',
+    date: '2024-9-30',
+    name: 'reaper',
+    url: 'https://reaper.is/',
+  },
 ];
