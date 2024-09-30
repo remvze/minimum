@@ -4,14 +4,12 @@ import { Container } from './container';
 import { padNumber } from '@/helpers/number';
 
 import { websites } from '@/data/websites';
-
-websites.reverse();
 ---
 
 <Container>
   <section class="websites">
     {
-      websites.map((website, index) => (
+      websites.toReversed().map((website, index) => (
         <div class="website">
           <p class="number">{padNumber(websites.length - index, 3)}</p>
           <a href={website.url}>{website.name}</a>
@@ -40,7 +38,7 @@ websites.reverse();
       align-items: center;
 
       &:not(:last-of-type) {
-        margin-bottom: 12px;
+        margin-bottom: 16px;
       }
 
       & .number {
