@@ -25,4 +25,10 @@ export const websites: Array<{
     name: 'Tiago Rangel',
     url: 'https://tiagorangel.com/',
   },
+  {
+    address: 'andrewtarkan.webflow.io',
+    date: '2024-9-30',
+    name: 'Andrew Tarkan',
+    url: 'https://andrewtarkan.webflow.io/',
+  },
 ];
