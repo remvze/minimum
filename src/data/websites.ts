@@ -31,4 +31,10 @@ export const websites: Array<{
     name: 'Andrew Tarkan',
     url: 'https://andrewtarkan.webflow.io/',
   },
+  {
+    address: 'charliedeets.com',
+    date: '2024-9-30',
+    name: 'Charlie Deets',
+    url: 'https://charliedeets.com/',
+  },
 ];
