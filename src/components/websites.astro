@@ -1,0 +1,87 @@
+---
+import { Container } from './container';
+
+import { padNumber } from '@/helpers/number';
+
+import { websites } from '@/data/websites';
+
+websites.reverse();
+---
+
+<Container>
+  <section class="websites">
+    {
+      websites.map((website, index) => (
+        <div class="website">
+          <p class="number">{padNumber(websites.length - index, 3)}</p>
+          <a href={website.url}>{website.name}</a>
+          <div class="divider" />
+          <p class="address">
+            {website.address.split('.').map((str, i) => {
+              if (i === 0) return <span>{str}</span>;
+
+              return '.' + str;
+            })}
+          </p>
+          <div class="dot" />
+        </div>
+      ))
+    }
+  </section>
+</Container>
+
+<style>
+  .websites {
+    padding: 100px 0;
+
+    & .website {
+      display: flex;
+      column-gap: 12px;
+      align-items: center;
+
+      &:not(:last-of-type) {
+        margin-bottom: 12px;
+      }
+
+      & .number {
+        font-family: var(--font-mono);
+        font-size: var(--font-xsm);
+        color: var(--color-foreground-subtler);
+      }
+
+      & a {
+        font-size: var(--font-sm);
+        color: var(--color-foreground);
+        text-decoration: none;
+      }
+
+      & .divider {
+        flex-grow: 1;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          var(--color-neutral-100),
+          var(--color-neutral-200),
+          var(--color-neutral-100)
+        );
+      }
+
+      & .address {
+        font-family: var(--font-mono);
+        font-size: var(--font-xsm);
+        color: var(--color-foreground-subtler);
+
+        & span {
+          color: var(--color-foreground-subtle);
+        }
+      }
+
+      & .dot {
+        width: 5px;
+        height: 5px;
+        background-color: var(--color-neutral-200);
+        border-radius: 50%;
+      }
+    }
+  }
+</style>
