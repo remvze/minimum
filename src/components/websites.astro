@@ -4,12 +4,16 @@ import { Container } from './container';
 import { padNumber } from '@/helpers/number';
 
 import { websites } from '@/data/websites';
+
+const reversedWebsites = [...websites];
+
+reversedWebsites.reverse();
 ---
 
 <Container>
   <section class="websites">
     {
-      websites.toReversed().map((website, index) => (
+      reversedWebsites.map((website, index) => (
         <div class="website">
           <p class="number">{padNumber(websites.length - index, 3)}</p>
           <a href={website.url}>{website.name}</a>
