@@ -18,7 +18,11 @@ reversedWebsites.reverse();
       reversedWebsites.map((website, index) => (
         <a class="website" href={website.url}>
           <div class="screenshot">
-            <img alt={website.address} src={website.screenshot} />
+            <img
+              alt={website.address}
+              loading="lazy"
+              src={website.screenshot}
+            />
           </div>
 
           <div class="details">
