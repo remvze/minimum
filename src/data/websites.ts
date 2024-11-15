@@ -25,4 +25,10 @@ export const websites: Array<{
     screenshot: '/images/screenshots/2dots.xyz.webp',
     url: 'https://2dots.xyz/',
   },
+  {
+    address: 'paco.me',
+    name: 'Paco Coursey',
+    screenshot: '/images/screenshots/paco.me.webp',
+    url: 'https://paco.me/',
+  },
 ];
