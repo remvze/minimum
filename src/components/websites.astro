@@ -1,4 +1,6 @@
 ---
+import { MdArrowOutward } from 'react-icons/md';
+
 import { Container } from './container';
 
 import { padNumber } from '@/helpers/number';
@@ -14,19 +16,22 @@ reversedWebsites.reverse();
   <section class="websites">
     {
       reversedWebsites.map((website, index) => (
-        <div class="website">
-          <p class="number">{padNumber(websites.length - index, 3)}</p>
-          <a href={website.url}>{website.name}</a>
-          <div class="divider" />
-          <p class="address">
-            {website.address.split('.').map((str, i) => {
-              if (i === 0) return <span>{str}</span>;
+        <a class="website" href={website.url}>
+          <div class="screenshot">
+            <img alt={website.address} src={website.screenshot} />
+          </div>
 
-              return '.' + str;
-            })}
-          </p>
-          <div class="dot" />
-        </div>
+          <div class="details">
+            <div class="row one">
+              <p class="number">{padNumber(websites.length - index, 3)}</p>
+              <p class="name">{website.name}</p>
+              <div class="divider" />
+              <div class="visit">
+                <MdArrowOutward />
+              </div>
+            </div>
+          </div>
+        </a>
       ))
     }
   </section>
@@ -35,52 +40,65 @@ reversedWebsites.reverse();
 <style>
   .websites {
     & .website {
-      display: flex;
-      column-gap: 12px;
-      align-items: center;
+      display: block;
+      color: var(--color-foreground);
+      text-decoration: none;
 
       &:not(:last-of-type) {
-        margin-bottom: 12px;
+        margin-bottom: 24px;
       }
 
-      & .number {
-        font-family: var(--font-mono);
-        font-size: var(--font-xsm);
-        color: var(--color-foreground-subtler);
-      }
+      & .screenshot {
+        width: 100%;
+        aspect-ratio: 1/1;
+        padding: 20px;
+        border: 1px solid var(--color-neutral-100);
 
-      & a {
-        font-size: var(--font-sm);
-        color: var(--color-foreground);
-        text-decoration: none;
-      }
-
-      & .divider {
-        flex-grow: 1;
-        height: 1px;
-        background: linear-gradient(
-          90deg,
-          var(--color-neutral-100),
-          var(--color-neutral-200),
-          var(--color-neutral-100)
-        );
-      }
-
-      & .address {
-        font-family: var(--font-mono);
-        font-size: var(--font-xsm);
-        color: var(--color-foreground-subtler);
-
-        & span {
-          color: var(--color-foreground-subtle);
+        & img {
+          display: block;
+          width: 100%;
+          aspect-ratio: 1/1;
+          border: 1px solid var(--color-neutral-200);
         }
       }
 
-      & .dot {
-        width: 5px;
-        height: 5px;
-        background-color: var(--color-neutral-200);
-        border-radius: 50%;
+      & .details {
+        margin-top: 12px;
+
+        & .row {
+          display: flex;
+          column-gap: 8px;
+          align-items: center;
+          font-size: var(--font-sm);
+
+          & .divider {
+            flex-grow: 1;
+            height: 1px;
+            background-color: var(--color-neutral-100);
+          }
+
+          &.one {
+            & .number {
+              font-family: var(--font-mono);
+              color: var(--color-foreground-subtler);
+            }
+
+            & .name {
+              font-weight: 500;
+            }
+
+            & .visit {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 28px;
+              height: 28px;
+              color: var(--color-foreground);
+              border: 1px solid var(--color-neutral-200);
+              border-radius: 50%;
+            }
+          }
+        }
       }
     }
   }
