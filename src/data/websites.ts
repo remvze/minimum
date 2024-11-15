@@ -57,4 +57,11 @@ export const websites: Array<{
     screenshot: '/images/screenshots/bmrks.com.webp',
     url: 'https://bmrks.com/',
   },
+  {
+    address: 'orangestudio.co',
+    date: '2024-11-15',
+    name: 'Orange Studio',
+    screenshot: '/images/screenshots/orangestudio.co.webp',
+    url: 'https://orangestudio.co/',
+  },
 ];
