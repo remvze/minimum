@@ -92,4 +92,18 @@ export const websites: Array<{
     screenshot: '/images/screenshots/studiomds.com.webp',
     url: 'https://studiomds.com/',
   },
+  {
+    address: 'goods.so',
+    date: '2024-11-16',
+    name: 'Goods',
+    screenshot: '/images/screenshots/goods.so.webp',
+    url: 'https://goods.so/',
+  },
+  {
+    address: 'minimalism.com',
+    date: '2024-11-16',
+    name: 'Minimalism Life',
+    screenshot: '/images/screenshots/minimalism.com.webp',
+    url: 'https://minimalism.com/',
+  },
 ];
