@@ -71,4 +71,25 @@ export const websites: Array<{
     screenshot: '/images/screenshots/eryc.cc.webp',
     url: 'https://eryc.cc/',
   },
+  {
+    address: 'felipe.design',
+    date: '2024-11-16',
+    name: 'Felipe',
+    screenshot: '/images/screenshots/felipe.design.webp',
+    url: 'https://felipe.design/',
+  },
+  {
+    address: 'liams.life',
+    date: '2024-11-16',
+    name: 'Liam Mews',
+    screenshot: '/images/screenshots/liams.life.webp',
+    url: 'https://liams.life/',
+  },
+  {
+    address: 'studiomds.com',
+    date: '2024-11-16',
+    name: 'MDS',
+    screenshot: '/images/screenshots/studiomds.com.webp',
+    url: 'https://studiomds.com/',
+  },
 ];
