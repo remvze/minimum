@@ -64,4 +64,11 @@ export const websites: Array<{
     screenshot: '/images/screenshots/orangestudio.co.webp',
     url: 'https://orangestudio.co/',
   },
+  {
+    address: 'eryc.cc',
+    date: '2024-11-16',
+    name: 'ERYC',
+    screenshot: '/images/screenshots/eryc.cc.webp',
+    url: 'https://eryc.cc/',
+  },
 ];
