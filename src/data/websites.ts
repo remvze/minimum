@@ -106,4 +106,11 @@ export const websites: Array<{
     screenshot: '/images/screenshots/minimalism.com.webp',
     url: 'https://minimalism.com/',
   },
+  {
+    address: 'prateekkeshari.com',
+    date: '2024-11-16',
+    name: 'Prateek Keshari',
+    screenshot: '/images/screenshots/prateekkeshari.com.webp',
+    url: 'https://prateekkeshari.com/',
+  },
 ];
