@@ -148,4 +148,25 @@ export const websites: Array<{
     screenshot: '/images/screenshots/antonstallboerger.com.webp',
     url: 'https://antonstallboerger.com/',
   },
+  {
+    address: 'openpurpose.com',
+    date: '2024-11-16',
+    name: 'OpenPurpose',
+    screenshot: '/images/screenshots/openpurpose.com.webp',
+    url: 'https://openpurpose.com/',
+  },
+  {
+    address: 'parth.ski',
+    date: '2024-11-16',
+    name: 'Parth Patel',
+    screenshot: '/images/screenshots/parth.ski.webp',
+    url: 'https://parth.ski/',
+  },
+  {
+    address: 'konolee.com',
+    date: '2024-11-16',
+    name: 'Konolee',
+    screenshot: '/images/screenshots/konolee.com.webp',
+    url: 'https://konolee.com/',
+  },
 ];
