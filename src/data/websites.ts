@@ -204,4 +204,18 @@ export const websites: Array<{
     screenshot: '/images/screenshots/softglossary.space.webp',
     url: 'https://softglossary.space/',
   },
+  {
+    address: 'arsenije.me',
+    date: '2024-11-17',
+    name: 'Arsenije “Archie” Catic',
+    screenshot: '/images/screenshots/arsenije.me.webp',
+    url: 'https://arsenije.me/',
+  },
+  {
+    address: 'denismoulin.com',
+    date: '2024-11-17',
+    name: 'Denis Moulin',
+    screenshot: '/images/screenshots/denismoulin.com.webp',
+    url: 'https://denismoulin.com/',
+  },
 ];
