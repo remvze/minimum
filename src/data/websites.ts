@@ -9,6 +9,20 @@ export const websites: Array<{
   url: string;
 }> = [
   {
+    address: 'ppppoems.com',
+    date: '2024-11-15',
+    name: 'ppppoems',
+    screenshot: '/images/screenshots/ppppoems.com.webp',
+    url: 'https://ppppoems.com/',
+  },
+  {
+    address: 'daftsocial.com',
+    date: '2024-11-15',
+    name: 'Daft Social',
+    screenshot: '/images/screenshots/daftsocial.com.webp',
+    url: 'https://daftsocial.com/',
+  },
+  {
     address: 'once.com',
     date: '2024-11-15',
     name: 'Once',
@@ -217,5 +231,26 @@ export const websites: Array<{
     name: 'Denis Moulin',
     screenshot: '/images/screenshots/denismoulin.com.webp',
     url: 'https://denismoulin.com/',
+  },
+  {
+    address: 'cassandratang.com',
+    date: '2024-11-18',
+    name: 'Cassandra Tang',
+    screenshot: '/images/screenshots/cassandratang.com.webp',
+    url: 'https://cassandratang.com/',
+  },
+  {
+    address: 'aarv.me',
+    date: '2024-11-18',
+    name: 'Aarav Sareen',
+    screenshot: '/images/screenshots/aarv.me.webp',
+    url: 'https://aarv.me/',
+  },
+  {
+    address: 'about-repetition.com',
+    date: '2024-11-18',
+    name: 'About Repetition',
+    screenshot: '/images/screenshots/about-repetition.com.webp',
+    url: 'https://about-repetition.com/',
   },
 ];
