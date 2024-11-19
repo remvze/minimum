@@ -253,4 +253,25 @@ export const websites: Array<{
     screenshot: '/images/screenshots/about-repetition.com.webp',
     url: 'https://about-repetition.com/',
   },
+  {
+    address: 'mash.haus',
+    date: '2024-11-19',
+    name: 'masha',
+    screenshot: '/images/screenshots/mash.haus.webp',
+    url: 'https://mash.haus/',
+  },
+  {
+    address: 'jliu.cc',
+    date: '2024-11-19',
+    name: 'Justin Liu',
+    screenshot: '/images/screenshots/jliu.cc.webp',
+    url: 'https://jliu.cc/',
+  },
+  {
+    address: 'rosannapeng.com',
+    date: '2024-11-19',
+    name: 'Rosanna Peng',
+    screenshot: '/images/screenshots/rosannapeng.com.webp',
+    url: 'https://rosannapeng.com/',
+  },
 ];
