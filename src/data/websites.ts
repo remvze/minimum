@@ -274,4 +274,11 @@ export const websites: Array<{
     screenshot: '/images/screenshots/rosannapeng.com.webp',
     url: 'https://rosannapeng.com/',
   },
+  {
+    address: 'charliedeets.com',
+    date: '2024-11-19',
+    name: 'Charlie Deets',
+    screenshot: '/images/screenshots/charliedeets.com.webp',
+    url: 'https://charliedeets.com/',
+  },
 ];
