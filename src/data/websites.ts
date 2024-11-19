@@ -281,4 +281,32 @@ export const websites: Array<{
     screenshot: '/images/screenshots/charliedeets.com.webp',
     url: 'https://charliedeets.com/',
   },
+  {
+    address: 'ja.mt',
+    date: '2024-11-19',
+    name: 'Jace',
+    screenshot: '/images/screenshots/ja.mt.webp',
+    url: 'https://ja.mt/',
+  },
+  {
+    address: 'nicolekwan.design',
+    date: '2024-11-19',
+    name: 'NICOLE KWAN',
+    screenshot: '/images/screenshots/nicolekwan.design.webp',
+    url: 'https://nicolekwan.design/',
+  },
+  {
+    address: 'christophebouche.co',
+    date: '2024-11-19',
+    name: 'Christophe Bouche',
+    screenshot: '/images/screenshots/christophebouche.co.webp',
+    url: 'https://christophebouche.co/',
+  },
+  {
+    address: 'stua.me',
+    date: '2024-11-19',
+    name: 'Artem Savelev',
+    screenshot: '/images/screenshots/stua.me.webp',
+    url: 'https://stua.me/',
+  },
 ];
