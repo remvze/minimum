@@ -309,4 +309,32 @@ export const websites: Array<{
     screenshot: '/images/screenshots/stua.me.webp',
     url: 'https://stua.me/',
   },
+  {
+    address: 'thaonf.com',
+    date: '2024-11-20',
+    name: 'Thao N.',
+    screenshot: '/images/screenshots/thaonf.com.webp',
+    url: 'https://thaonf.com/',
+  },
+  {
+    address: 'audreychow.com',
+    date: '2024-11-20',
+    name: 'Audrey Chow',
+    screenshot: '/images/screenshots/audreychow.com.webp',
+    url: 'https://audreychow.com/',
+  },
+  {
+    address: 'bocc.dev',
+    date: '2024-11-20',
+    name: 'bocc(dot)dev',
+    screenshot: '/images/screenshots/bocc.dev.webp',
+    url: 'https://bocc.dev/',
+  },
+  {
+    address: 'stuart.re',
+    date: '2024-11-20',
+    name: 'Stuart Regan',
+    screenshot: '/images/screenshots/stuart.re.webp',
+    url: 'https://stuart.re/',
+  },
 ];
