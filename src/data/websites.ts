@@ -1,5 +1,6 @@
 /**
  * From Old to New
+ * YYYY/MM/DD
  */
 export const websites: Array<{
   address: string;
@@ -336,5 +337,61 @@ export const websites: Array<{
     name: 'Stuart Regan',
     screenshot: '/images/screenshots/stuart.re.webp',
     url: 'https://stuart.re/',
+  },
+  {
+    address: 'manneskja.is',
+    date: '2025-01-15',
+    name: 'Manneskja',
+    screenshot: '/images/screenshots/manneskja.is.webp',
+    url: 'https://manneskja.is/',
+  },
+  {
+    address: 'itsdpark.com',
+    date: '2025-01-15',
+    name: 'Daniel Park',
+    screenshot: '/images/screenshots/itsdpark.com.webp',
+    url: 'https://itsdpark.com/',
+  },
+  {
+    address: 'jornvandijk.com',
+    date: '2025-01-15',
+    name: 'Jorn van Dijk',
+    screenshot: '/images/screenshots/jornvandijk.com.webp',
+    url: 'https://jornvandijk.com/',
+  },
+  {
+    address: 'presence.supply',
+    date: '2025-01-15',
+    name: 'Presence.supply',
+    screenshot: '/images/screenshots/presence.supply.webp',
+    url: 'https://presence.supply/',
+  },
+  {
+    address: 'bachitter.dev',
+    date: '2025-01-15',
+    name: 'Bachitter Chahal',
+    screenshot: '/images/screenshots/bachitter.dev.webp',
+    url: 'https://bachitter.dev/',
+  },
+  {
+    address: 'kevin.gd',
+    date: '2025-01-15',
+    name: 'kevin chin',
+    screenshot: '/images/screenshots/kevin.gd.webp',
+    url: 'https://kevin.gd/',
+  },
+  {
+    address: 'kimchiii.space',
+    date: '2025-01-15',
+    name: 'Kunall Banerjee',
+    screenshot: '/images/screenshots/kimchiii.space.webp',
+    url: 'https://kimchiii.space/',
+  },
+  {
+    address: 'linusrogge.com',
+    date: '2025-01-15',
+    name: 'Linus Rogge',
+    screenshot: '/images/screenshots/linusrogge.com.webp',
+    url: 'https://linusrogge.com/',
   },
 ];
