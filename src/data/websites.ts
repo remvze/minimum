@@ -394,4 +394,11 @@ export const websites: Array<{
     screenshot: '/images/screenshots/linusrogge.com.webp',
     url: 'https://linusrogge.com/',
   },
+  {
+    address: 'thekolapo.com',
+    date: '2025-02-03',
+    name: 'Kolapo Oni',
+    screenshot: '/images/screenshots/thekolapo.com.webp',
+    url: 'https://thekolapo.com/',
+  },
 ];
