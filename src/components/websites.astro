@@ -1,9 +1,5 @@
 ---
-import { MdArrowOutward } from 'react-icons/md';
-
 import { Container } from './container';
-
-import { padNumber } from '@/helpers/number';
 
 import { websites } from '@/data/websites';
 
@@ -15,7 +11,7 @@ reversedWebsites.reverse();
 <Container>
   <section class="websites">
     {
-      reversedWebsites.map((website, index) => (
+      reversedWebsites.map(website => (
         <a class="website" href={website.url}>
           <div class="screenshot">
             <img
@@ -25,16 +21,7 @@ reversedWebsites.reverse();
             />
           </div>
 
-          <div class="details">
-            <div class="row one">
-              <p class="number">{padNumber(websites.length - index, 3)}</p>
-              <p class="name">{website.name}</p>
-              <div class="divider" />
-              <div class="visit">
-                <MdArrowOutward />
-              </div>
-            </div>
-          </div>
+          <div class="name">{website.name}</div>
         </a>
       ))
     }
@@ -43,23 +30,50 @@ reversedWebsites.reverse();
 
 <style>
   .websites {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    gap: 8px;
+
     & .website {
+      position: relative;
       display: block;
       color: var(--color-foreground);
       text-decoration: none;
 
-      &:not(:last-of-type) {
-        margin-bottom: 24px;
+      & .name {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        font-size: var(--font-sm);
+        background-color: rgb(9 9 11 / 80%);
+        backdrop-filter: blur(2px);
+        border: 1px solid var(--color-neutral-200);
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      &:hover .name {
+        opacity: 1;
       }
 
       &:hover .screenshot {
-        padding: 16px;
+        padding: 0;
+
+        & img {
+          border-color: transparent;
+        }
       }
 
       & .screenshot {
         width: 100%;
         aspect-ratio: 1/1;
-        padding: 20px;
+        padding: 8px;
         border: 1px solid var(--color-neutral-200);
         transition: 0.2s;
 
@@ -68,45 +82,7 @@ reversedWebsites.reverse();
           width: 100%;
           aspect-ratio: 1/1;
           border: 1px solid var(--color-neutral-200);
-        }
-      }
-
-      & .details {
-        margin-top: 12px;
-
-        & .row {
-          display: flex;
-          column-gap: 8px;
-          align-items: center;
-          font-size: var(--font-sm);
-
-          & .divider {
-            flex-grow: 1;
-            height: 1px;
-            background-color: var(--color-neutral-200);
-          }
-
-          &.one {
-            & .number {
-              font-family: var(--font-mono);
-              color: var(--color-foreground-subtler);
-            }
-
-            & .name {
-              font-weight: 500;
-            }
-
-            & .visit {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              width: 28px;
-              height: 28px;
-              color: var(--color-foreground);
-              border: 1px solid var(--color-neutral-200);
-              border-radius: 50%;
-            }
-          }
+          transition: 0.2s;
         }
       }
     }
