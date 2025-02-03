@@ -401,4 +401,25 @@ export const websites: Array<{
     screenshot: '/images/screenshots/thekolapo.com.webp',
     url: 'https://thekolapo.com/',
   },
+  {
+    address: 'p.cv',
+    date: '2025-02-03',
+    name: 'P.CV',
+    screenshot: '/images/screenshots/p.cv.webp',
+    url: 'https://p.cv/',
+  },
+  {
+    address: 'roko-g.work',
+    date: '2025-02-03',
+    name: 'Roko Gabrilo',
+    screenshot: '/images/screenshots/roko-g.work.webp',
+    url: 'https://roko-g.work/',
+  },
+  {
+    address: 'otherdays.studio',
+    date: '2025-02-03',
+    name: 'Otherdays® Studio',
+    screenshot: '/images/screenshots/otherdays.studio.webp',
+    url: 'https://otherdays.studio/',
+  },
 ];
