@@ -422,4 +422,11 @@ export const websites: Array<{
     screenshot: '/images/screenshots/otherdays.studio.webp',
     url: 'https://otherdays.studio/',
   },
+  {
+    address: 'gav.space',
+    date: '2025-02-03',
+    name: 'Gavin Atkinson',
+    screenshot: '/images/screenshots/gav.space.webp',
+    url: 'https://gav.space/',
+  },
 ];
