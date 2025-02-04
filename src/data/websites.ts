@@ -443,4 +443,11 @@ export const websites: Array<{
     screenshot: '/images/screenshots/thisisveryrude.com.webp',
     url: 'https://thisisveryrude.com/',
   },
+  {
+    address: 'eddiedale.com',
+    date: '2025-02-04',
+    name: 'Eddie Dale',
+    screenshot: '/images/screenshots/eddiedale.com.webp',
+    url: 'https://eddiedale.com/',
+  },
 ];
