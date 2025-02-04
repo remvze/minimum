@@ -7,6 +7,7 @@ import { Container } from './container';
     <img alt="Minimum Logo" src="/logo.svg" />
     <h1>Minimum</h1>
     <p>Directory of minimal websites.</p>
+    <p class="motto">... because <span>less is better.</span></p>
   </section>
 </Container>
 
@@ -28,6 +29,17 @@ import { Container } from './container';
     & p {
       font-size: var(--font-sm);
       color: var(--color-foreground-subtle);
+
+      &.motto {
+        margin-top: 4px;
+
+        & span {
+          font-family: var(--font-serif);
+          font-style: italic;
+          font-weight: 500;
+          color: var(--color-foreground);
+        }
+      }
     }
   }
 </style>

@@ -51,3 +51,12 @@
   src: url('/fonts/instrument-serif-v4-latin-regular.woff2') format('woff2');
   font-display: swap;
 }
+
+/* newsreader-500italic - latin */
+@font-face {
+  font-family: Newsreader;
+  font-style: italic;
+  font-weight: 500;
+  src: url('/fonts/newsreader-v20-latin-500italic.woff2') format('woff2');
+  font-display: swap;
+}

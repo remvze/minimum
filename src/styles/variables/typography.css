@@ -1,8 +1,8 @@
 :root {
-  --font-serif: 'Lora', serif;
   --font-display: 'Instrument Serif', serif;
   --font-sans: 'Inter', sans-serif;
   --font-mono: 'Space Mono', monospace;
+  --font-serif: 'Newsreader', serif;
 
   /* Font Sizes */
   --font-base-size: 1rem;
