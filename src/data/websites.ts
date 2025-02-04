@@ -422,4 +422,11 @@ export const websites: Array<{
     screenshot: '/images/screenshots/otherdays.studio.webp',
     url: 'https://otherdays.studio/',
   },
+  {
+    address: 'yzy-sply.com',
+    date: '2025-02-04',
+    name: 'YZY',
+    screenshot: '/images/screenshots/yzy-sply.com.webp',
+    url: 'https://yzy-sply.com/',
+  },
 ];
