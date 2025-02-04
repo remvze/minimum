@@ -1,7 +1,14 @@
 .styleWrapper {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   margin-bottom: 20px;
+
+  & .styleDivider {
+    flex-grow: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-neutral-200));
+  }
 
   & .styleButtons {
     display: flex;
@@ -16,6 +23,7 @@
       justify-content: center;
       width: 28px;
       height: 28px;
+      font-size: var(--font-sm);
       color: var(--color-foreground-subtler);
       cursor: pointer;
       background-color: var(--color-neutral-50);

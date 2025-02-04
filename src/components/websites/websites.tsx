@@ -23,6 +23,7 @@ export function Websites({ websites }: WebsitesProps) {
   return (
     <>
       <div className={styles.styleWrapper}>
+        <div className={styles.styleDivider} />
         <div className={styles.styleButtons}>
           <button
             className={cn(style === 'small' && styles.selected)}
