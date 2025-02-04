@@ -429,4 +429,11 @@ export const websites: Array<{
     screenshot: '/images/screenshots/yzy-sply.com.webp',
     url: 'https://yzy-sply.com/',
   },
+  {
+    address: 'thisisveryrude.com',
+    date: '2025-02-04',
+    name: 'Shannon Lim',
+    screenshot: '/images/screenshots/thisisveryrude.com.webp',
+    url: 'https://thisisveryrude.com/',
+  },
 ];
