@@ -1,9 +1,0 @@
-services:
-  timesy:
-    image: ghcr.io/remvze/progress
-    logging:
-      options:
-        max-size: 1g
-    restart: always
-    ports:
-      - '8080:8080'
