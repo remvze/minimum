@@ -1,4 +1,4 @@
 <div align="center">
-  <h2>Website</h2>
-  <p>Source code of my personal blog.</p>
+  <h2>Minimum</h2>
+  <p>Minimal websites directory.</p>
 </div>
