@@ -1,0 +1,68 @@
+---
+import Layout from '@/layouts/layout.astro';
+import { Container } from '@/components/container';
+import Websites from '@/components/websites.astro';
+
+import { websites } from '@/data/websites';
+import Footer from '@/components/footer.astro';
+import { Random } from '@/components/random';
+import { padNumber } from '@/helpers/number';
+---
+
+<Layout>
+  <Container wide>
+    <section class="hero">
+      <img alt="Minimum Logo" src="/logo.svg" />
+      <h1>Minimum</h1>
+      <p class="desc">Minimal websites directory.</p>
+      <p class="tagline">Because less, is more.</p>
+      <p class="counter">
+        <span>{padNumber(websites.length, 5)}</span> websites collected.
+      </p>
+
+      <Random client:load />
+    </section>
+
+    <Websites websites={websites} />
+    <Footer />
+  </Container>
+</Layout>
+
+<style>
+  .hero {
+    padding: 120px 0 60px;
+
+    & img {
+      display: block;
+      width: 28px;
+      height: 28px;
+      margin-bottom: 36px;
+    }
+
+    & h1 {
+      font-weight: 500;
+      color: var(--color-foreground);
+    }
+
+    & .desc {
+      margin-top: 12px;
+      color: var(--color-foreground-subtle);
+    }
+
+    & .tagline {
+      margin-top: 2px;
+      color: var(--color-foreground-subtler);
+    }
+
+    & .counter {
+      margin-top: 24px;
+      font-size: var(--font-sm);
+      color: var(--color-foreground-subtler);
+
+      & span {
+        font-family: var(--font-mono);
+        color: var(--color-foreground-subtle);
+      }
+    }
+  }
+</style>

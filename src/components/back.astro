@@ -1,0 +1,21 @@
+---
+interface Props {
+  address: string;
+}
+
+const { address } = Astro.props;
+---
+
+<a class="back-link" href={address}>(Back)</a>
+
+<style>
+  .back-link {
+    display: block;
+    width: max-content;
+    margin-bottom: 36px;
+    font-size: var(--font-xsm);
+    font-weight: 500;
+    color: var(--color-foreground-subtler);
+    text-decoration: none;
+  }
+</style>

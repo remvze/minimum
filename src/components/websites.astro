@@ -1,0 +1,76 @@
+---
+import { websites } from '@/data/websites';
+
+interface Props {
+  websites: typeof websites;
+}
+
+const { websites: sites } = Astro.props;
+---
+
+<section class="websites">
+  {
+    sites.map(website => (
+      <div class="website">
+        <a class="image" href={`/websites/${website.slug}`}>
+          <img
+            alt={`Screenshot of ${website.name}`}
+            loading="lazy"
+            src={website.screenshot}
+          />
+        </a>
+        <div class="details">
+          <a class="link" href={website.url}>
+            {website.address}
+          </a>
+        </div>
+      </div>
+    ))
+  }
+  {sites.length === 1 && <div />}
+</section>
+
+<style>
+  .websites {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 36px 32px;
+
+    & .website {
+      width: 100%;
+
+      & .image {
+        position: relative;
+        display: block;
+
+        & img {
+          display: block;
+          width: 100%;
+          aspect-ratio: 1 / 1;
+          border: 1px solid var(--color-neutral-200);
+        }
+      }
+
+      & .details {
+        display: flex;
+        column-gap: 8px;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 12px;
+        font-size: var(--font-sm);
+
+        & .link {
+          font-family: var(--font-mono);
+          font-size: var(--font-xsm);
+          color: var(--color-foreground-subtle);
+          text-decoration: none;
+          transition: 0.2s;
+
+          &:hover {
+            color: var(--color-foreground);
+          }
+        }
+      }
+    }
+  }
+</style>

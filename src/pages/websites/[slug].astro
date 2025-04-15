@@ -1,0 +1,156 @@
+---
+import Layout from '@/layouts/layout.astro';
+import { Container } from '@/components/container';
+import Footer from '@/components/footer.astro';
+import Back from '@/components/back.astro';
+
+import { websites } from '@/data/websites';
+import { pickMany } from '@/helpers/random';
+import { formatDate } from '@/helpers/date';
+
+export async function getStaticPaths() {
+  return websites.map(website => ({
+    params: { slug: website.slug },
+    props: {
+      similarWebsites: pickMany(
+        websites.filter(w => w.slug !== website.slug),
+        5,
+      ),
+      website,
+    },
+  }));
+}
+
+const { similarWebsites, website } = Astro.props;
+---
+
+<Layout title={`${website.name} // Minimal Website Inspiration`}>
+  <Container>
+    <section class="hero">
+      <Back address="/" />
+      <div class="content">
+        <h1>{website.name}</h1>
+        <p class="link">
+          <a href={website.url}>{website.address}</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="screenshot">
+      <img alt={`Screenshot of ${website.name}`} src={website.screenshot} />
+      <p class="date">
+        Added on <span>{formatDate(new Date(website.date))}</span>
+      </p>
+    </section>
+
+    <section class="others">
+      <h2>Similar Websites</h2>
+      <div class="websites">
+        {
+          similarWebsites.map(website => (
+            <a href={`/websites/${website.slug}`}>
+              <img
+                alt={`Screenshot of ${website.name}`}
+                loading="lazy"
+                src={website.screenshot}
+              />
+            </a>
+          ))
+        }
+      </div>
+      <a class="all" href="/">(View All)</a>
+    </section>
+    <Footer />
+  </Container>
+</Layout>
+
+<style>
+  .hero {
+    padding: 120px 0 20px;
+
+    & .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      & h1 {
+        font-weight: 500;
+      }
+
+      & .link {
+        & a {
+          font-family: var(--font-mono);
+          font-size: var(--font-xsm);
+          font-weight: 500;
+          color: var(--color-foreground-subtle);
+          text-decoration: none;
+          transition: 0.2s;
+
+          &:hover {
+            color: var(--color-foreground);
+          }
+        }
+      }
+    }
+  }
+
+  .screenshot {
+    width: 100%;
+
+    & img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border: 1px solid var(--color-neutral-200);
+    }
+
+    & p {
+      margin-top: 12px;
+      font-size: var(--font-2xsm);
+      color: var(--color-foreground-subtler);
+      text-align: right;
+
+      & span {
+        font-family: var(--font-mono);
+        font-weight: 500;
+        color: var(--color-foreground-subtle);
+      }
+    }
+  }
+
+  .others {
+    margin-top: 100px;
+
+    & h2 {
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    & .websites {
+      & a {
+        display: block;
+
+        &:not(:last-of-type) {
+          margin-bottom: 12px;
+        }
+
+        & img {
+          display: block;
+          width: 100%;
+          aspect-ratio: 1 / 1;
+          border: 1px solid var(--color-neutral-200);
+        }
+      }
+    }
+
+    & .all {
+      display: block;
+      width: max-content;
+      margin: 36px auto 0;
+      font-size: var(--font-sm);
+      font-weight: 500;
+      color: var(--color-foreground-subtle);
+      text-decoration: none;
+    }
+  }
+</style>

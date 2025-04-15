@@ -1,0 +1,19 @@
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  margin-top: 32px;
+  font-size: var(--font-sm);
+  font-weight: 500px;
+  color: var(--color-foreground-subtle);
+  text-decoration: none;
+  cursor: pointer;
+  background: transparent;
+  background: var(--color-neutral-50);
+  border: none;
+  transition: 0.2s;
+
+  &:hover {
+    color: var(--color-foreground);
+  }
+}
