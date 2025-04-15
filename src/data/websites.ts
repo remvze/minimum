@@ -671,6 +671,13 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-04-12-pqoqubbw-dev.webp',
     url: 'https://pqoqubbw.dev',
   },
+  {
+    address: 'paolonessim.com',
+    date: '2025-04-14',
+    name: 'Paolo Nessim',
+    screenshot: '/images/screenshots/2025-04-14-paolonessim-com.webp',
+    url: 'https://paolonessim.com',
+  },
 ];
 
 export const websites = reverseArray(
