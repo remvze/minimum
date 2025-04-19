@@ -678,6 +678,55 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-04-14-paolonessim-com.webp',
     url: 'https://paolonessim.com',
   },
+  {
+    address: 'kundo.studio',
+    date: '2025-04-19',
+    name: 'Kundo Studio',
+    screenshot: '/images/screenshots/2025-04-19-kundo-studio.webp',
+    url: 'https://kundo.studio',
+  },
+  {
+    address: 'atillataskiran.com',
+    date: '2025-04-19',
+    name: 'Atilla Taşkıran',
+    screenshot: '/images/screenshots/2025-04-19-atillataskiran-com.webp',
+    url: 'https://atillataskiran.com',
+  },
+  {
+    address: 'jasonyuan.design',
+    date: '2025-04-19',
+    name: 'Jason Yuan',
+    screenshot: '/images/screenshots/2025-04-19-jasonyuan-design.webp',
+    url: 'https://jasonyuan.design',
+  },
+  {
+    address: 'hamzaalabou.com',
+    date: '2025-04-19',
+    name: 'Hamza Alabou',
+    screenshot: '/images/screenshots/2025-04-19-hamzaalabou-com.webp',
+    url: 'https://hamzaalabou.com',
+  },
+  {
+    address: 'serhii.be',
+    date: '2025-04-19',
+    name: 'Serhii Bedrytskyi',
+    screenshot: '/images/screenshots/2025-04-19-serhii-be.webp',
+    url: 'https://serhii.be',
+  },
+  {
+    address: 'evilrabbit.com',
+    date: '2025-04-19',
+    name: 'Evil Rabbit',
+    screenshot: '/images/screenshots/2025-04-19-evilrabbit-com.webp',
+    url: 'https://evilrabbit.com',
+  },
+  {
+    address: 'rauchg.com',
+    date: '2025-04-19',
+    name: 'Guillermo Rauch',
+    screenshot: '/images/screenshots/2025-04-19-rauchg-com.webp',
+    url: 'https://rauchg.com',
+  },
 ];
 
 export const websites = reverseArray(
