@@ -727,6 +727,34 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-04-19-rauchg-com.webp',
     url: 'https://rauchg.com',
   },
+  {
+    address: 'nickdilallo.com',
+    date: '2025-04-21',
+    name: 'Nick DiLallo',
+    screenshot: '/images/screenshots/2025-04-21-nickdilallo-com.webp',
+    url: 'https://nickdilallo.com',
+  },
+  {
+    address: 'margins.app',
+    date: '2025-04-21',
+    name: 'Margins',
+    screenshot: '/images/screenshots/2025-04-21-margins-app.webp',
+    url: 'https://margins.app',
+  },
+  {
+    address: '535.studio',
+    date: '2025-04-21',
+    name: '535',
+    screenshot: '/images/screenshots/2025-04-21-535-studio.webp',
+    url: 'https://535.studio',
+  },
+  {
+    address: 'armond.me',
+    date: '2025-04-21',
+    name: 'Armond Schneider',
+    screenshot: '/images/screenshots/2025-04-21-armond-me.webp',
+    url: 'https://armond.me',
+  },
 ];
 
 export const websites = reverseArray(
