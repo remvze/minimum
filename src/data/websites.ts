@@ -429,7 +429,7 @@ const _websites: Array<{
   {
     address: 'chanhdai.com',
     date: '2025-04-10',
-    name: 'Chánh Đại',
+    name: 'ChanhDai',
     screenshot: '/images/screenshots/2025-04-10-chanhdai-com.webp',
     url: 'https://chanhdai.com',
   },
