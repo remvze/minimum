@@ -755,6 +755,13 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-04-21-armond-me.webp',
     url: 'https://armond.me',
   },
+  {
+    address: 'anzy.io',
+    date: '2025-04-28',
+    name: 'Anzor Abazov',
+    screenshot: '/images/screenshots/2025-04-28-anzy-io.webp',
+    url: 'https://anzy.io',
+  },
 ];
 
 export const websites = reverseArray(
