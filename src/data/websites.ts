@@ -762,6 +762,41 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-04-28-anzy-io.webp',
     url: 'https://anzy.io',
   },
+  {
+    address: 'leerob.com',
+    date: '2025-04-28',
+    name: 'Lee Robinson',
+    screenshot: '/images/screenshots/2025-04-28-leerob-com.webp',
+    url: 'https://leerob.com',
+  },
+  {
+    address: 'tino.works',
+    date: '2025-04-28',
+    name: 'Tino Zhabinskiy',
+    screenshot: '/images/screenshots/2025-04-28-tino-works.webp',
+    url: 'https://tino.works',
+  },
+  {
+    address: 'faizanwar.com',
+    date: '2025-04-28',
+    name: 'Faiz Anwar',
+    screenshot: '/images/screenshots/2025-04-28-faizanwar-com.webp',
+    url: 'https://faizanwar.com',
+  },
+  {
+    address: 'ash.cv',
+    date: '2025-04-28',
+    name: 'Ash',
+    screenshot: '/images/screenshots/2025-04-28-ash-cv.webp',
+    url: 'https://ash.cv',
+  },
+  {
+    address: '15min.design',
+    date: '2025-04-28',
+    name: '15min.design',
+    screenshot: '/images/screenshots/2025-04-28-15min-design.webp',
+    url: 'https://15min.design',
+  },
 ];
 
 export const websites = reverseArray(
