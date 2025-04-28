@@ -797,6 +797,34 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-04-28-15min-design.webp',
     url: 'https://15min.design',
   },
+  {
+    address: 'mononym.com',
+    date: '2025-04-28',
+    name: 'Mononym',
+    screenshot: '/images/screenshots/2025-04-28-mononym-com.webp',
+    url: 'https://mononym.com',
+  },
+  {
+    address: 'bijani.com',
+    date: '2025-04-28',
+    name: 'The Bijani Company',
+    screenshot: '/images/screenshots/2025-04-28-bijani-com.webp',
+    url: 'https://bijani.com',
+  },
+  {
+    address: 'fennell.cv',
+    date: '2025-04-28',
+    name: 'Liam Fennell',
+    screenshot: '/images/screenshots/2025-04-28-fennell-cv.webp',
+    url: 'https://fennell.cv',
+  },
+  {
+    address: 'moodie.blog',
+    date: '2025-04-28',
+    name: 'Moodie',
+    screenshot: '/images/screenshots/2025-04-28-moodie-blog.webp',
+    url: 'https://moodie.blog',
+  },
 ];
 
 export const websites = reverseArray(
