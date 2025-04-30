@@ -825,6 +825,20 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-04-28-moodie-blog.webp',
     url: 'https://moodie.blog',
   },
+  {
+    address: 'eric.rest',
+    date: '2025-04-30',
+    name: 'Eric Viana',
+    screenshot: '/images/screenshots/2025-04-30-eric-rest.webp',
+    url: 'https://eric.rest',
+  },
+  {
+    address: 'anirnair.com',
+    date: '2025-04-30',
+    name: 'Anirudh Nair',
+    screenshot: '/images/screenshots/2025-04-30-anirnair-com.webp',
+    url: 'https://anirnair.com',
+  },
 ];
 
 export const websites = reverseArray(
