@@ -839,6 +839,13 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-04-30-anirnair-com.webp',
     url: 'https://anirnair.com',
   },
+  {
+    address: 'minnix.cv',
+    date: '2025-05-05',
+    name: 'Minnix',
+    screenshot: '/images/screenshots/2025-05-05-minnix-cv.webp',
+    url: 'https://minnix.cv',
+  },
 ];
 
 export const websites = reverseArray(
