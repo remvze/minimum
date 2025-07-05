@@ -874,6 +874,13 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-07-05-ragojose-com.webp',
     url: 'https://ragojose.com',
   },
+  {
+    address: 'offscript.cc',
+    date: '2025-07-05',
+    name: 'offscript',
+    screenshot: '/images/screenshots/2025-07-05-offscript-cc.webp',
+    url: 'https://offscript.cc',
+  },
 ];
 
 export const websites = reverseArray(
