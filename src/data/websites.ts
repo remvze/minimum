@@ -846,6 +846,34 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-05-05-minnix-cv.webp',
     url: 'https://minnix.cv',
   },
+  {
+    address: 'prompt-files.com',
+    date: '2025-07-05',
+    name: 'Prompt Files',
+    screenshot: '/images/screenshots/2025-07-05-prompt-files-com.webp',
+    url: 'https://prompt-files.com',
+  },
+  {
+    address: 'baytas.net',
+    date: '2025-07-05',
+    name: 'M.A. Baytaş',
+    screenshot: '/images/screenshots/2025-07-05-baytas-net.webp',
+    url: 'https://baytas.net',
+  },
+  {
+    address: 'victorlbq.fr',
+    date: '2025-07-05',
+    name: 'Victor Lebecq',
+    screenshot: '/images/screenshots/2025-07-05-victorlbq-fr.webp',
+    url: 'https://victorlbq.fr',
+  },
+  {
+    address: 'ragojose.com',
+    date: '2025-07-05',
+    name: 'Jose Rago',
+    screenshot: '/images/screenshots/2025-07-05-ragojose-com.webp',
+    url: 'https://ragojose.com',
+  },
 ];
 
 export const websites = reverseArray(
