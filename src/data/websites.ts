@@ -888,6 +888,13 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-07-20-pqoqubbw-dev.webp',
     url: 'https://pqoqubbw.dev',
   },
+  {
+    address: 'rokadakia.com',
+    date: '2025-07-24',
+    name: 'Rohan Kadakia',
+    screenshot: '/images/screenshots/2025-07-24-rokadakia-com.webp',
+    url: 'https://rokadakia.com',
+  },
 ];
 
 export const websites = reverseArray(
