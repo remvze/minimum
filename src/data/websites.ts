@@ -895,6 +895,20 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-07-24-rokadakia-com.webp',
     url: 'https://rokadakia.com',
   },
+  {
+    address: 'sonderpoems.com',
+    date: '2025-08-01',
+    name: 'Sonder Poems',
+    screenshot: '/images/screenshots/2025-08-01-sonderpoems-com.webp',
+    url: 'https://sonderpoems.com',
+  },
+  {
+    address: 'alasdairmonk.com',
+    date: '2025-08-01',
+    name: 'Alasdair Monk',
+    screenshot: '/images/screenshots/2025-08-01-alasdairmonk-com.webp',
+    url: 'https://alasdairmonk.com',
+  },
 ];
 
 export const websites = reverseArray(
