@@ -916,6 +916,13 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-08-02-montyanderson-net.webp',
     url: 'https://montyanderson.net',
   },
+  {
+    address: 'jckhlry.com',
+    date: '2025-08-04',
+    name: 'Jack Hillery',
+    screenshot: '/images/screenshots/2025-08-04-jckhlry-com.webp',
+    url: 'https://jckhlry.com',
+  },
 ];
 
 export const websites = reverseArray(
