@@ -7,15 +7,17 @@ import { websites } from '@/data/websites';
 import Footer from '@/components/footer.astro';
 import { Random } from '@/components/random';
 import { padNumber } from '@/helpers/number';
+import { ShinyText } from '@/components/shiny-text';
 ---
 
 <Layout>
+  <div class="pattern"></div>
   <Container wide>
     <section class="hero">
       <img alt="Minimum Logo" src="/logo.svg" />
       <h1>Minimum</h1>
       <p class="desc">Minimal websites directory.</p>
-      <p class="tagline">Because less, is more.</p>
+      <p class="tagline"><ShinyText text="Because less, is more." /></p>
       <p class="counter">
         <span>{padNumber(websites.length, 5)}</span> websites collected.
       </p>
@@ -29,6 +31,28 @@ import { padNumber } from '@/helpers/number';
 </Layout>
 
 <style>
+  .pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 400px;
+    background-color: var(--color-neutral-50);
+    background-image: linear-gradient(
+        var(--color-neutral-200) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        to right,
+        var(--color-neutral-200) 1px,
+        var(--color-neutral-50) 1px
+      );
+    background-size: 40px 40px;
+    opacity: 0.8;
+    mask-image: radial-gradient(circle at top left, #000, transparent 400px);
+  }
+
   .hero {
     padding: 120px 0 60px;
 
