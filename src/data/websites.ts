@@ -923,6 +923,13 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-08-04-jckhlry-com.webp',
     url: 'https://jckhlry.com',
   },
+  {
+    address: 'pham.codes',
+    date: '2025-08-05',
+    name: 'john phamous',
+    screenshot: '/images/screenshots/2025-08-05-pham-codes.webp',
+    url: 'https://pham.codes',
+  },
 ];
 
 export const websites = reverseArray(
