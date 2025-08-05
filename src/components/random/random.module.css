@@ -1,6 +1,8 @@
 .button {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  column-gap: 1px;
+  align-items: baseline;
   padding: 0;
   margin-top: 32px;
   font-size: var(--font-sm);
@@ -15,5 +17,25 @@
 
   &:hover {
     color: var(--color-foreground);
+
+    & div {
+      & span {
+        transform: translateY(-100%);
+      }
+    }
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  & div {
+    height: 1rem;
+    overflow: hidden;
+
+    & span {
+      display: block;
+      transition: 0.3s;
+    }
   }
 }

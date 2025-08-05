@@ -12,7 +12,12 @@ export function Random() {
 
   return (
     <button className={styles.button} onClick={openRandom}>
-      (Random)
+      (
+      <div>
+        <span>Random</span>
+        <span>Random</span>
+      </div>
+      )
     </button>
   );
 }
