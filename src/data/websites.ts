@@ -930,6 +930,13 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-08-05-pham-codes.webp',
     url: 'https://pham.codes',
   },
+  {
+    address: 'moeritz.io',
+    date: '2025-08-07',
+    name: 'Tobias Möritz',
+    screenshot: '/images/screenshots/2025-08-07-moeritz-io.webp',
+    url: 'https://moeritz.io',
+  },
 ];
 
 export const websites = reverseArray(
