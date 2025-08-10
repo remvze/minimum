@@ -944,6 +944,13 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-08-08-fennell-cv.webp',
     url: 'https://fennell.cv',
   },
+  {
+    address: 'bastienallard.com',
+    date: '2025-08-10',
+    name: 'Bastien Allard',
+    screenshot: '/images/screenshots/2025-08-10-bastienallard-com.webp',
+    url: 'https://bastienallard.com',
+  },
 ];
 
 export const websites = reverseArray(
