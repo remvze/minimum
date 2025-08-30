@@ -951,6 +951,13 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-08-10-bastienallard-com.webp',
     url: 'https://bastienallard.com',
   },
+  {
+    address: 'adriengriveau.com',
+    date: '2025-08-30',
+    name: 'Adrien Griveau',
+    screenshot: '/images/screenshots/2025-08-30-adriengriveau-com.webp',
+    url: 'https://adriengriveau.com',
+  },
 ];
 
 export const websites = reverseArray(
