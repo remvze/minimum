@@ -930,6 +930,34 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-08-05-pham-codes.webp',
     url: 'https://pham.codes',
   },
+  {
+    address: 'moeritz.io',
+    date: '2025-08-07',
+    name: 'Tobias Möritz',
+    screenshot: '/images/screenshots/2025-08-07-moeritz-io.webp',
+    url: 'https://moeritz.io',
+  },
+  {
+    address: 'fennell.cv',
+    date: '2025-08-08',
+    name: 'Liam Fennell',
+    screenshot: '/images/screenshots/2025-08-08-fennell-cv.webp',
+    url: 'https://fennell.cv',
+  },
+  {
+    address: 'bastienallard.com',
+    date: '2025-08-10',
+    name: 'Bastien Allard',
+    screenshot: '/images/screenshots/2025-08-10-bastienallard-com.webp',
+    url: 'https://bastienallard.com',
+  },
+  {
+    address: 'adriengriveau.com',
+    date: '2025-08-30',
+    name: 'Adrien Griveau',
+    screenshot: '/images/screenshots/2025-08-30-adriengriveau-com.webp',
+    url: 'https://adriengriveau.com',
+  },
 ];
 
 export const websites = reverseArray(
