@@ -132,9 +132,14 @@ const { similarWebsites, website } = Astro.props;
     & .websites {
       & a {
         display: block;
+        transition: 0.2s;
+
+        &:hover {
+          transform: scale(1.02);
+        }
 
         &:not(:last-of-type) {
-          margin-bottom: 12px;
+          margin-bottom: 16px;
         }
 
         & img {
