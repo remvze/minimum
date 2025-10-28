@@ -958,6 +958,13 @@ const _websites: Array<{
     screenshot: '/images/screenshots/2025-08-30-adriengriveau-com.webp',
     url: 'https://adriengriveau.com',
   },
+  {
+    address: 'nutlope.com',
+    date: '2025-10-28',
+    name: 'Hassan El Mghari',
+    screenshot: '/images/screenshots/2025-10-28-nutlope-com.webp',
+    url: 'https://nutlope.com',
+  },
 ];
 
 export const websites = reverseArray(
